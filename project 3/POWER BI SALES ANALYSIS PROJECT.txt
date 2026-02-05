@@ -1,0 +1,69 @@
+POWER BI SALES ANALYSIS PROJECT
+
+Step 1: Data Loading
+Loaded fact and dimension tables into Power BI.
+Fact table contains sales transaction data.
+Dimension tables include Date, Product, Region, and Customer.
+Verified data types and removed errors.
+
+Step 2: Data Modeling
+Created relationships between fact and dimension tables.
+Used Many-to-One relationships from fact to dimension tables.
+Ensured single-direction cross filtering.
+Verified model in Model view.
+
+Step 3: Dedicated Measure Table
+Created a separate table to store all DAX measures.
+Used Enter Data to create a dummy table.
+Hid the dummy column.
+Moved all measures to this dedicated measure table.
+
+Step 4: Basic Measures
+Created basic measures using DAX:
+- Total Sales
+- Total Cost
+- Total Profit
+Used these measures in Matrix visuals only.
+
+Step 5: Quick Measures
+Used Quick Measure option for time-based calculations.
+Configured required fields correctly.
+Displayed results using Matrix visual.
+
+Step 6: Filter Context and Behavior
+Used CALCULATE to modify filter context.
+Compared sales with filters and without filters.
+Used ALL() to remove Region filter.
+Used FILTER() to apply conditional logic.
+Displayed comparison using Matrix visual.
+
+Step 7: Matrix with ALL, FILTER, CALCULATE
+Created measures for:
+- Sales with filter
+- Sales without filter using ALL()
+- Conditional sales using FILTER()
+Added Region in Rows and measures in Values in Matrix.
+Observed difference between filtered and unfiltered results.
+
+Step 8: DAX Operators and Functions
+Used arithmetic operators to calculate:
+- Profit
+- Profit Margin
+Used logical functions like IF to classify profit or loss.
+Displayed all results in Matrix visual.
+
+Step 9: Iterator Functions
+Used SUMX for row-by-row calculation.
+Used AVERAGEX to calculate average sales per product.
+Displayed iterator results in Matrix visual.
+
+Step 10: Time Intelligence
+Marked Date table properly.
+Used TOTALYTD to calculate Year-to-Date sales.
+Used SAMEPERIODLASTYEAR to calculate last year sales.
+Calculated Year-over-Year growth.
+Displayed all time intelligence measures in Matrix visual.
+
+Conclusion
+This project  modeling, DAX measures, filter context, iterator functions, and time intelligence in Power BI.
+All analysis outputs are shown using Matrix visuals as per project requirement.
